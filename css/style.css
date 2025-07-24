@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.header_customizado{
+    background-color: blueviolet;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/pexels-tdcat-70912.jpg);
+    background-size: cover;
+    background-position: top center;
+    color: #BFBFBF;
+    position: relative;
+    z-index: 1;
+}
+
+.header_customizado h1{
+    font-family: "Sansation", sans-serif;
+    text-shadow: 9px 7px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-main{
+    background-color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container-main h2{
+    text-align: center;
+    font-family: "Sansation", sans-serif;
+    color: #40404092;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #4040401d;
+    margin-bottom: 15px;
+}
+
