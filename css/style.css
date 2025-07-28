@@ -79,6 +79,10 @@ input[type="radio"] + label{
 
 }
 
+input[type="radio"]{
+    margin: 10px;
+}
+
 .container_grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 400px));
