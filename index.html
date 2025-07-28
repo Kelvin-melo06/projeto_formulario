@@ -24,7 +24,7 @@
 
                 <div>
 
-                    <label for="titulo_anuncio">Título do anúncio</label>
+                    <label for="titulo_anuncio">Título do anúncio:</label>
                     <input type="text" name="Anuncio" id="titulo_anuncio" placeholder="Um título para anunciar seu carro" required>
 
                 </div>
@@ -32,7 +32,7 @@
 
                 <div>
 
-                    <label for="preco">Preço</label>
+                    <label for="preco">Preço:</label>
                     <input type="number" id="preco" name="Valor" placeholder="Defina o preço" required min="0" max="1000000">
 
                 </div>
@@ -40,7 +40,7 @@
 
                 <div>
 
-                    <label for="descricao">Descrição</label>
+                    <label for="descricao">Descrição:</label>
                     <textarea id="descricao" name="Detalhes_do_carro" placeholder="Aqui voce coloca os detalhes do veículo, por exemplo, se ele tem algum arranhão" required></textarea>
 
                 </div>
@@ -48,7 +48,7 @@
 
                 <div>
 
-                    <label for="marca">Marca</label>
+                    <label for="marca">Marca:</label>
                     <input type="text" name="Marca_carro" id="marca" placeholder="Digite a marca do carro" list="brand" required>
 
                     <datalist id="brand">
@@ -84,7 +84,7 @@
 
                 <div>
 
-                    <label for="km">Kilometragem</label>
+                    <label for="km">Kilometragem:</label>
                     <input type="number" name="Kilometros_carro" id="km" required placeholder="Digite a quilometragem do carro" min="0" max="1000000">
 
                 </div>
@@ -92,55 +92,93 @@
 
                 <div>
 
-                    <label for="data_compra">Data de Compra</label>
+                    <label for="data_compra">Data de Compra:</label>
                     <input type="date" name="Compra_Data" id="data_compra" required>
 
                 </div>
 
                 <div>
 
-                    <span>Tipo de cambio</span>
+                    <span>Tipo de cambio:</span>
+                        
+                            <div>
 
-                    <input type="radio" name="tipo_cambio" id="manual" value="Manual" required>
-                    <label for="manual">Manual</label>
+                                <input type="radio" name="tipo_cambio" id="manual" value="Manual" required>
+                                <label for="manual">Manual</label>
+                                <input type="radio" name="tipo_cambio" id="automatico" value="Automático" required>
+                                <label for="automatico">Automático</label>
 
-                    <input type="radio" name="tipo_cambio" id="automatico" value="Automático" required>
-                    <label for="automatico">Automático</label>
+                            </div>
+                        
+                </div>
+
+                <div>
+                    <span>Opcionais:</span>
+
+                    <div class="container_grid">
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="airbag" value="Airbag">
+                            <label for="airbag">Airbag</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="alarme" value="Alarme">
+                            <label for="alarme">Alarme</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="ar_condicionado" value="Ar Condicionado">
+                            <label for="ar_condicionado">Ar condicionado</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="camera_re" value="Câmera de Ré">
+                            <label for="camera_re">Câmera de Ré</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="assistente_Pista" value="Assistente de Pista">
+                            <label for="assistente_Pista">Assistente de Pista</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="partida_keyless" value="Partida Keyless">
+                            <label for="partida_keyless">Partida Keyless</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="integração_smartphone" value="Integração Smartphone">
+                            <label for="integração_smartphone">Integração Smartphone</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="Opcionais_carro[]" id="banco_couro" value="Bancos de Couro">
+                            <label for="banco_couro">Bancos de Couro</label>
+
+                        </div>
+                    </div>
 
                 </div>
 
                 <div>
-                    <span>Opcionais</span>
 
-                    <input type="checkbox" name="Opcionais_carro[]" id="airbag" value="Airbag">
-                    <label for="airbag">Airbag</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="alarme" value="Alarme">
-                    <label for="alarme">Alarme</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="ar_condicionado" value="Ar Condicionado">
-                    <label for="ar_condicionado">Ar condicionado</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="camera_re" value="Câmera de Ré">
-                    <label for="camera_re">Câmera de Ré</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="assistente_Pista" value="Assistente de Pista">
-                    <label for="assistente_Pista">Assistente de Pista</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="partida_keyless" value="Partida Keyless">
-                    <label for="partida_keyless">Partida Keyless</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="integração_smartphone" value="Integração Smartphone">
-                    <label for="integração_smartphone">Integração Smartphone</label>
-
-                    <input type="checkbox" name="Opcionais_carro[]" id="banco_couro" value="Bancos de Couro">
-                    <label for="banco_couro">Bancos de Couro</label>
-
-                </div>
-
-                <div>
-
-                    <label for="carro_foto">Foto do carro</label>
+                    <label for="carro_foto">Foto do carro:</label>
                     <input type="file" name="foto_carro" id="carro_foto" accept="image/*" required>
 
                 </div>
