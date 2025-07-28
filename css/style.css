@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 body{
-    background-color: aquamarine;
+    background: linear-gradient(to right,#40404094, #40404092 );
+    padding-bottom: 50px;
 }
 
 .header_customizado{
@@ -21,7 +23,7 @@ body{
     background-image: url(../img/pexels-tdcat-70912.jpg);
     background-size: cover;
     background-position: top center;
-    color: #BFBFBF;
+    color: #bfbfbffd;
     position: relative;
     z-index: 1;
 }
@@ -32,15 +34,14 @@ body{
 }
 
 .container-main{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.801);
     max-width: 1100px;
     margin: 0 auto;
     padding: 30px;
     position: relative;
     z-index: 2;
     margin-top: -50px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 8px;
 }
 
 .container-main h2{
@@ -52,3 +53,64 @@ body{
     margin-bottom: 15px;
 }
 
+.formulario > h3{
+    font-size: 30px;
+    padding: 10px;
+    font-family: "sansation", sans-serif;
+    color: #40404092;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.formulario > p{
+    font-size: 16px;
+    color: #0e0d0d;
+}
+
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+    display: inline-block;
+
+}
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+}
+
+
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+    width: 50%;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+input[type="submit"]{
+    width: 120px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #404040;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: #0e0d0d67;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-family: "sansation", sans-serif;
+}
