@@ -81,10 +81,9 @@ input[type="radio"] + label{
 
 .container_grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    grid-template-columns: repeat(2, minmax(150px, 400px));
+    line-height: 10px;
 }
-
 
 input[type="text"],
 textarea,
